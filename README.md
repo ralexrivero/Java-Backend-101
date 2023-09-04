@@ -35,7 +35,10 @@
 
 ### Contenido
 
-- [0x00-Hola Mundo]() | Primer programa en Java
+- [00-HolaMundo](./00-HolaMundo/) | Primer programa en Java
+- [00-comentarios](./00-comentarios/) | Comentarios en Java (single line, multi line, doc)
+- [01-variables](./01-variables/) | Variables en Java (tipos de datos, declaracion, inicializacion, asignacion, conversion, operadores)
+- [01-variables_numericas](./01-variables_numericas/) | Variables numericas en Java (tipos de datos, operadores)
 
 ## Autor
 
