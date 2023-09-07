@@ -20,5 +20,12 @@ public class EvaluacionExpresiones {
         long resultado = entero + largo;
         System.out.println("5 + 10L = " + resultado);
         // el valor entero se promociona automaticamente a long para que la operacion se realice sin errores
+
+        // conversion explicita
+        double real = 2.9;
+        int entero2 = (int) real;
+
+        System.out.println("la conversion de 2.9 a entero es: " + entero2);
+
     }
 }
