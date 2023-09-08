@@ -9,9 +9,9 @@ public class JuegoAdivinaElNumero {
         int numeroIntroducido = scanner.nextInt();
 
         if (numeroIntroducido == numeroPensado) {
-            System.out.println("Acertaste el numero elegido");
+            System.out.println("\033[0;32mAcertaste el numero elegido");
         } else {
-            System.out.println("Segui participando!");
+            System.out.println("\033[0;31mSegui participando!");
         }
     }
 }
