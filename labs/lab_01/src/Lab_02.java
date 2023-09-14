@@ -14,19 +14,22 @@ public class Lab_02 {
         // Calculo de area segun la figura
 
         switch (figura) {
+            case "círculo":
             case "circulo":
                 System.out.println("Ingrese el radio del circulo: ");
                 radio = scanner.nextDouble();
                 System.out.println("El area del circulo es: " + Math.PI * radio * radio);
                 break;
 
+            case "rectángulo":
             case "rectangulo":
                 System.out.println("Introduzca la base y la altura: ");
                 base = scanner.nextDouble();
                 altura = scanner.nextDouble();
-                System.out.println("El area del rectangulo es: " + base * altura);
+                System.out.println("El área del rectangulo es: " + base * altura);
                 break;
 
+            case "triángulo":
             case "triangulo":
                 System.out.println("Introduzca la base y la altura del triangulo: ");
                 base = scanner.nextDouble();
