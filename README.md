@@ -18,7 +18,6 @@
 - [Bruno Ribolla](https://www.linkedin.com/)
 - [Edgardo Zipitria](https://www.linkedin.com/)
 - [Guillermo Maurente](https://www.linkedin.com/)
-- [Ramsell Pérez](https://www.linkedin.com/)
 - [Santiago Ayala](https://www.linkedin.com/)
 - [Wellington Silva](https://www.linkedin.com/)
 
@@ -40,6 +39,8 @@
 ## Laboratorios
 
 - [lab_01](./labs/lab_01/) | Bucle for
+<!-- - [lab_02](./labs/lab_02/) | Bucle while -->
+- [lab_03](./labs/lab_03/) | Arreglos y Cadenas en Java
 
 ## Autor
 
