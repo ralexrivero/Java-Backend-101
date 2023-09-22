@@ -39,9 +39,9 @@
 ## Laboratorios
 
 - [lab_01](./labs/lab_01/) | Bucle for
-<!-- - [lab_02](./labs/lab_02/) | Bucle while -->
 - [lab_03](./labs/lab_03/) | Arreglos y Cadenas en Java
 - [lab_04](./labs/lab_04/) | Clase Auto
+- [lab_05](./labs/lab_05/) | Sistema de Biblioteca, Sistema de Reservas de Hotel, Sistema de Venta de Entradas para Cine, Sistema de Gestión de Estudiantes y Cursos
 
 ## Autor
 
