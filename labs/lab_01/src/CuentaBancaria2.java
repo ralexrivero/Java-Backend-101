@@ -7,7 +7,7 @@ public class CuentaBancaria2 {
     // metodos: encapsulan comportamientos y operaciones
     // metodo para sacar dinero
     public void sacarDinero(double cantidad) {
-        
+
         saldo -= cantidad;
     }
 
