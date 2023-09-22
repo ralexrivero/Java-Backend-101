@@ -4,6 +4,9 @@ public class Arreglos {
     public static void main(String[] args) {
         int[] numeros; // declaro el arreglo, tipo, [] y nombre
         numeros = new int[7]; // le asigno el espacio, reservo espacio
+        numeros[0] = 10;
+        numeros[1]= 20;
+        numeros[2] = 40;
         int[] numeros2 = {1, 2, 3, 4, 5}; // inicializo con los valores especificos
 
         // Los strings son secuencias de caracteres
