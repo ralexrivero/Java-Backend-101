@@ -81,11 +81,28 @@ public class Auto {
         }
     }
     public void mostrarEstado() {
-        
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Año: " + anio);
+        System.out.println("Color: " + color);
+        System.out.println("Velocidad actual: " + velocidadActual + " km/h");
+        System.out.println("Encendido: " + (encendido ? "Sí" : "No" ));
+        System.out.println("Combustible: " + combustible + " litros");
+        System.out.println("Ubicacion actual: " + ubicacionActual);
     }
 
     public static void main(String[] args) {
-        Auto miAuto = new Auto("toyota", "Corolla", 2020, "verde", 180, 50)
+        Auto miAuto = new Auto("toyota", "Corolla", 2020, "verde", 180, 50);
+        System.out.println("Estado incial del auto");
+        miAuto.mostrarEstado();
 
+        miAuto.cargarCombustible(10);
+        miAuto.mover("Tienda", 5);
+
+        miAuto.encender();
+        miAuto.mover("Tienda", 5);
+
+        System.out.println("Estado final del auto");
+        miAuto.mostrarEstado();
     }
 }
