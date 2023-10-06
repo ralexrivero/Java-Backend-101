@@ -1,9 +1,11 @@
 import java.util.ArrayList;
 public class Biblioteca {
     private ArrayList<Libro> libros;
+    private ArrayList<Prestamo> prestamos;
 
     public Biblioteca() {
         this.libros = new ArrayList<>();
+        this.prestamos = new ArrayList<>();
     }
 
     public void agregarLibro(Libro libro) {
@@ -25,5 +27,14 @@ public class Biblioteca {
 
     public ArrayList<Libro> getLibros() {
         return libros;
+    }
+
+    public void prestarLibro(Libro libro, Persona persona) {
+        Prestamo prestamo = new Prestamo(libro, persona);
+        prestamos.add(prestamo);
+    }
+
+    public ArrayList<Prestamo> getPrestamos() {
+        return prestamos;
     }
 }

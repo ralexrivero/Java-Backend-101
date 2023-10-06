@@ -8,6 +8,10 @@ public class TestBiblioteca {
         Libro libro1 = new Libro("Harry Potter", autor1, 1997, "9787074753274");
         Libro libro2 = new Libro("El Señor de los Anillos", autor2, 1954, "9780007525546");
 
+        // Crear personas
+        Persona persona1 = new Persona("Mustafa", "P001");
+        Persona persona2 = new Persona("Any", "P002");
+
         // Crear biblioteca y agregar libros
         Biblioteca biblioteca = new Biblioteca();
         biblioteca.agregarLibro(libro1);
@@ -28,5 +32,14 @@ public class TestBiblioteca {
             System.out.println("Libro no encontrado: " + libroBuscado);
         }
 
+        // Prestar libros
+        biblioteca.prestarLibro(libro1, persona1);
+        biblioteca.prestarLibro(libro2, persona2);
+
+        // Prestamos actuales
+        System.out.println("\nPréstamos actuales:");
+        for (Prestamo prestamo : biblioteca.getPrestamos()) {
+            System.out.println(prestamo);
+        }
     }
 }
