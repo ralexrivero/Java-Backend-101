@@ -62,4 +62,13 @@ public class GestorDeAlumnos {
             return new ArrayList<>();
         }
     }
+    
+    public void modificarNombreAlumno(String nombreAntiguo, String nuevoNombre) {
+        for (Alumno alumno : alumnos) {
+            if (alumno.getNombre().equals(nombreAntiguo)) {
+                alumno.setNombre(nuevoNombre);
+                break;
+            }
+        }
+    }
 }
