@@ -1,6 +1,7 @@
+import java.io.Serializable; // necesario para genear la secuencia de bytes
 import java.util.ArrayList;
 
-public class Alumno {
+public class Alumno implements Serializable {
     /*
         almacena y gestiona la informacion del alumno
      */
@@ -40,6 +41,10 @@ public class Alumno {
             suma += nota;
         }
         return suma / notas.size();
+    }
+
+    public String getNombre() {
+        return nombre;
     }
 
     @Override
