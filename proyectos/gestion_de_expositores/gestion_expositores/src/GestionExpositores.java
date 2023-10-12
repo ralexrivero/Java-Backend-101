@@ -73,14 +73,14 @@ public class GestionExpositores {
                     }
                     break;
                 case 5:
-                System.out.print("Ingrese el nombre actual del alumno: ");
-                String nombreAntiguo = scanner.nextLine();
-                System.out.print("Ingrese el nuevo nombre del alumno: ");
-                String nuevoNombre = scanner.nextLine();
-                gestor.modificarNombreAlumno(nombreAntiguo, nuevoNombre);
-                gestor.guardarAlumnos();  // Guardar alumnos después de modificar el nombre
-                System.out.println("Nombre modificado correctamente.");
-                break;
+                    System.out.print("Ingrese el nombre actual del alumno: ");
+                    String nombreAntiguo = scanner.nextLine();
+                    System.out.print("Ingrese el nuevo nombre del alumno: ");
+                    String nuevoNombre = scanner.nextLine();
+                    gestor.modificarNombreAlumno(nombreAntiguo, nuevoNombre);
+                    gestor.guardarAlumnos();  // Guardar alumnos después de modificar el nombre
+                    System.out.println("Nombre modificado correctamente.");
+                    break;
                 case 6:
                     // salir
                     System.out.println("Programa finalizado...");
