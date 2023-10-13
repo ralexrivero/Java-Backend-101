@@ -1,12 +1,63 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+<!DOCTYPE html><!-- DOCTYPE indica al navegador que este es un documento HTML5 -->
+<html lang="es"> <!-- raiz del documento -->
+<head> <!-- encabezado del documento. Metadatos: informacion para maquinas -->
+  <meta charset="UTF-8"> <!-- charset define la codificacion de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- controla como se debe dimensionar el contenido en diferentes dispositivos -->
+  <meta name="description" content="Estructura comentada de una página web en HTML, ideal para comenzar nuestros proyectos"> <!-- Para el posicionamiento en buscadores y la descripcion en el buscador -->
+  <meta name="keywords" content="HTML, Semantica, Etiquetas, Boilerplate"> <!-- referencia que no es indexable -->
+  <meta name="author" content="Ronald Alexander"> <!-- author define el nombre del autor del documento -->
+  <title>Primera página web</title>
 </head>
 
-<body>
+<body> <!-- contenido visible de la página -->
 
+  <header> <!-- elementos del encabezado como el logo, navegacion, menu, login -->
+    <nav> <!-- define una seccion de navegacion, generalmente enlaces de menu -->
+      <ul> <!-- lista desordenada -->
+        <li>
+          <a href="https://www.google.com/">Google</a> <!-- <a> un enlace --><!-- url absoluta, completa https... -->
+        </li> <!-- <li> es un elemento de la lista -->
+        <li><a href="index.html">Hola Mundo</a></li> <!-- url relativa, en el mismo directorio -->
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- contenido principal, cuerpo del documento, la razon del sitio -->
+  <main>
+    <article>
+      <h1>Encabezado principal</h1> <!-- h1 es el encabezado de mayor jerarquia -->
+      <h2>Parrafos</h2><!-- h2 es el encabezado de segunda jarquia -->
+      <p>Este es un párrafo de texto que proporciona infomación adicional sobre el tema principal que describe el encabezado principal</p> <!-- parrafo -->
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut explicabo necessitatibus similique magni, laboriosam voluptatem iusto quia facilis incidunt maxime quisquam. Deleniti inventore minima beatae officiis aliquid id earum alias.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa minima consectetur, minus asperiores fugiat perferendis eum. Itaque mollitia rem, reiciendis perspiciatis nemo tempora officia accusamus magni dolorem corrupti soluta sequi aliquam quisquam fuga. Consequatur odio praesentium culpa inventore sapiente consectetur minima eaque sit, fuga distinctio cum vel commodi?</p>
+      <h2>Parrafos con espacios y saltos de linea</h2>
+      <p>No se tiene en cuenta el espacio ni el salto de linea en HTML</p>
+      <p>Este          es          un            párrafo con                    muchos espacios</p>
+      <p>Este es
+        otro
+        párrafo
+        con
+        muchos
+        saltos
+        de
+
+
+
+        linea
+      </p>
+      <section>
+        <h2>Sub seccion de otro tema</h2>
+        <h3>Sub seccion de un tema especifico</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolore odit minima aliquam ducimus quisquam similique dolorem, quibusdam dolor molestiae praesentium error tempora voluptates!</p>
+      </section>
+    </article>
+  </main>
+
+  <!-- footer generalmente tiene info del copyright, autor, enlaces, politicas, etc. -->
+  <footer>
+    <small>&copy; &reg; &trade; &rarr; 2023 Java Backend Developers. Todos los derechos reservados </small>
+  </footer>
 </body>
 </html>
