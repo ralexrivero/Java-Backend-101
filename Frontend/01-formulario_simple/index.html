@@ -13,11 +13,51 @@
 
       <!-- Campo de texto para el nombre -->
       <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre">
+      <input type="text" id="nombre" name="nombre" required>
       <br> <!-- esto es un salto de linea mientras no usamos css -->
+
       <!-- Apellido -->
       <label for="apellido">Apellido:</label>
-      <input type="text" id="apellido" name="apellido">
+      <input type="text" id="apellido" name="apellido" required>
+      <br>
+
+      <!-- campo para el correo electronico -->
+      <label for="email">email</label>
+      <input type="email" id="email" name="email" placeholder="nombre@dominio.com" required>
+      <br>
+
+      <!-- usuario (nickname) -->
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" name="usuario" required>
+      <br>
+
+      <!-- password -->
+      <label for="pass">Contraseña</label>
+      <input type="password" id="pass" name="pass" placeholder="crea una contraseña" minlength="8" required>
+      <br>
+
+      <!-- fecha de nacimiento -->
+      <label for="fecha_nacimiento">Fecha de nacimiento</label>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+      <br>
+
+      <!-- Género -->
+      <p>Género:</p>
+      <input type="radio" id="femenino" name="genero" value="femenino" required>
+      <label for="femenino">Femenino</label>
+      <input type="radio" id="masculino" name="genero" value="masculino" required>
+      <label for="masculino">Masculino</label>
+      <input type="radio" id="no_binario" name="genero" value="no_binario" required>
+      <label for="no_binario">No binario</label>
+      <br>
+
+      <!-- -->
+      <input type="checkbox" id="terminos" name="terminos" value="acepto" required>
+      <label for="terminos">Acepto los términos y condiciones</label>
+      <br>
+
+      <!-- boton de envio del formulario -->
+      <input type="submit" value="enviar">
     </form>
   </main>
 </body>
