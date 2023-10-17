@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario avanzado</title>
+</head>
+<body>
+  <main>
+    <h1>Formulario avanzado</h1>
+    <ul>
+      <li>text</li>
+      <li>password</li>
+      <li>email</li>
+      <li>number</li>
+      <li>date</li>
+      <li>range</li>
+      <li>tel</li>
+      <li>color</li>
+      <li>checkbox</li>
+      <li>radio</li>
+      <li>dropdown</li>
+      <li>textarea</li>
+      <li>botones</li>
+    </ul>
+    <form>
+      <!-- texto -->
+      <label for="username">Nombre de usuario</label>
+      <input type="text" id="username" name="username" required><br><br>
+
+      <label for="fullname">nombre completo</label>
+      <input id="fullname" type="text" name="fullname">
+      <!-- fullname = 'Ronald Rivero' -->
+
+      <!-- password -->
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <!-- email -->
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <!-- numero -->
+      <label for="age">Edad</label>
+      <input type="number" id="age" name="age" min="1" max="100"><br><br>
+
+      <!-- fecha -->
+      <label for="birthdate">Fecha de nacimiento</label>
+      <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+      <!-- rango -->
+      <label for="experience">Años de experiencia</label>
+      <input type="range" id="experience" name="experience" min="0" max="20" value="10"><br><br>
+
+      <!-- telefono -->
+      <label for="phone">Teléfono</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
+
+      <!-- url -->
+      <label for="website">Sitio web</label>
+      <input type="url" id="website" name="website" required><br><br>
+
+      <!-- color -->
+      <label for="favcolor">Color favorito</label>
+      <input type="color" id="favcolor" name="favcolor"><br><br>
+
+      <!-- checkbox -->
+      <label>Idiomas que hablas</label>
+      <input type="checkbox" id="english" name="language" value="english">
+      <label for="english">Inglés</label>
+      <input type="checkbox" id="spanish" name="language" value="spanish" checked>
+      <label for="spanish">Español</label><br><br>
+
+      <!-- radio button-->
+      <label>Nivel de educación</label><br>
+      <input type="radio" id="highschool" name="education" value="highschool">
+      <label for="highschool">Secundaria</label><br>
+      <input type="radio" id="bachelor" name="education" value="bachelor">
+      <label for="bachelor">Licenciatura</label><br>
+      <input type="radio" id="master" name="education" value="master">
+      <label for="master">Maestría</label><br><br>
+
+      <!-- dropdown -->
+      <label for="country">País</label>
+      <select id="country" name="country">
+        <option value="" disabled selected>== selecciona tu país ==</option>
+        <option value="ar">Argentina</option>
+        <option value="br">Brasil</option>
+        <option value="uy">Uruguay</option>
+      </select><br><br>
+
+      <!-- textarea -->
+      <label for="bio">Biografía</label>
+      <textarea id="bio" name="bio" rows="12" cols="72"></textarea><br><br>
+
+      <!-- botones -->
+      <input type="reset" value="limpiar">
+      <input type="submit" value="enviar">
+    </form>
+  </main>
+</body>
+</html>
