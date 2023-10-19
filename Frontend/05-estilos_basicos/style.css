@@ -1,3 +1,50 @@
-main {
-  background-color: red;
+/*
+Selectores en CSS
+(a proposito, esto es un comentario)
+*/
+
+/************************
+Selector universal
+*************************/
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+}
+
+/************************
+Selectores de etiqueta
+*************************/
+h1 {
+  color: blue;
+}
+
+h2 {
+  color: green;
+}
+
+/**********************
+Selectores de clase
+**********************/
+.titulo_2 {
+  color: red;
+}
+
+/* si hay dos selectores de igual peso, se queda con el ultimo*/
+.titulo_2 {
+  color: peru;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 48px;
+}
+
+.bullets {
+  color: blueviolet;
+  font-size: 22px;
+}
+
+/************************
+Selectores de id (no usar)
+************************/
+
+#selector_et {
+  background: orangered;
 }

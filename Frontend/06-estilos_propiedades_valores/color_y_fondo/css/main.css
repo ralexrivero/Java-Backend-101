@@ -1,0 +1,31 @@
+/********************
+Propiedad color
+*********************/
+
+* {
+  color: #333;
+  background-color: #eee;
+}
+
+.titulo {
+  color: #00897b;
+}
+
+.titulo2 {
+  color: #a5141e;
+}
+
+.parr-color {
+  color: #004d40
+}
+
+.bg-color {
+  background-color: #b2dfdb;
+}
+
+.bg-image {
+  background-image: url(https://via.placeholder.com/240);
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
