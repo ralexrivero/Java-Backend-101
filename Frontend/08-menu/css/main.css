@@ -1,0 +1,70 @@
+/***********************
+Menu de navegacion basico
+************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+/***********************
+reset
+************************/
+* {
+}
+
+/***********************
+general
+***********************/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/************************
+navegacion
+*************************/
+
+
+
+/**************************
+links
+***************************/
+
+ul {
+  list-style: none;
+}
+
+a {
+}
+
+/***********************
+link states
+***********************/
+.item-menu, .item-menu:link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  width: 100;
+  color: #4f4f4f;
+}
+
+.item-menu:visited {
+  color: #4f4f4f;
+}
+
+.item-menu:focus {
+  outline: 1px dashed rgba(0, 0, 0, .3)
+}
+
+.item-menu:hover {
+  background-color: #494949;
+  color: #fff;;
+}
+
+.item-menu:active {
+  background-color: blue;
+}
