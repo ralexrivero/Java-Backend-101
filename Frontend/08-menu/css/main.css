@@ -8,7 +8,12 @@ Menu de navegacion basico
 /***********************
 reset
 ************************/
-* {
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /***********************
@@ -38,18 +43,18 @@ ul {
   list-style: none;
 }
 
-a {
-}
-
 /***********************
 link states
 ***********************/
 .item-menu, .item-menu:link {
+  display: block;
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
-  width: 100;
+  width: 100%;
   color: #4f4f4f;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  transition: all .25s ease-in-out;
 }
 
 .item-menu:visited {
@@ -57,14 +62,22 @@ link states
 }
 
 .item-menu:focus {
-  outline: 1px dashed rgba(0, 0, 0, .3)
+  outline: 1px dotted rgba(0, 0, 0, .3)
 }
 
 .item-menu:hover {
   background-color: #494949;
-  color: #fff;;
+  color: #fff;
 }
 
 .item-menu:active {
-  background-color: blue;
+  background-color: #333;
+  color: #fff;
+}
+
+
+/* iconos */
+
+.fa-solid {
+  margin-right: .5rem;
 }
