@@ -22,6 +22,7 @@ descripcion TEXT,
 id_profesor INT,
 horario TIME,
 FOREIGN KEY (id_profesor) REFERENCES Profesores(id)
+);
 
 CREATE TABLE Matriculas (
     id_estudiante INT,
