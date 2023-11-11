@@ -79,3 +79,25 @@ const filtrarPares = numeros => numeros.filter(n => n % 2 === 0); // el modulo 2
 
 const pares = filtrarPares([1, 2, 3, 4, 5, 6]);
 console.log(pares);
+
+// Repaso Funciones de orden superior
+
+function saludar(nombre) {
+    return `Hola, ${nombre}!`;
+}
+
+// callback es una funcion como argumento a otra funcion, luego esa funcion la invoca desde adentro.
+
+function procesarEntrada(usuario, callback) {
+    return callback(usuario);  // saludar('Rob')
+}
+
+console.log(procesarEntrada("Rob", saludar))
+
+// Hoisting
+
+console.log(miFuncion()); // esto va a funcionar bien
+
+function miFuncion() {
+    return 'El hoisting funciona';
+}
