@@ -79,6 +79,24 @@ for (let propiedad in persona) {
 
 
 // Metodos de alto orden para Arrays
-// map
-let numeros = [1, 2, 3, 4, 5]
-let cuadrados = numeros.map(n => n * n); // [1, 4, 9, 16, 25]
+// son funciones que operan en otras funciones
+// map(), es un metodo que crea un nuevo array con los resultados de llamar a una funcion para cada elemento del array
+
+const numeros = [1, 2, 3, 4, 5];
+const cuadrados = numeros.map(n => n * n); // [1, 4, 9, 16, 25]
+
+// filter() crea un nuevo array con todos los elementos que pasan la prueba del filtro, que tambien esta en una funcion
+
+const numeros2 = [5, 10, 15, 20];
+const mayoresADiez = numeros2.filter(num => num > 10);
+
+console.log(mayoresADiez); // [15, 20]
+
+// reduce() ejectua una funcion reductora sobre cada elemento del array, devuleve un solo valor.
+
+// numeros es el array inicial [1, 2, 3, 4, 5]
+const suma = numeros.reduce((acumulador, valorActual) => acumulador + valorActual, 0); // el 0 es el valor inicial del acumulador
+const producto = numeros.reduce((acumulador, valorActual) => acumulador * valorActual, 1); // el 0 es el valor inicial del acumulador
+
+console.log(suma)
+console.log(producto)
