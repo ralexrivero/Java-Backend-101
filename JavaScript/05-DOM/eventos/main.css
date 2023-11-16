@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    margin: 1rem;
+}
+
+p {
+    padding: .5rem;
+}
+
+/* cambiar al tema oscuro */
+.dark {
+    background-color: #333;
+    color: #eee;
+}
+
