@@ -30,9 +30,9 @@
 - [![Java](https://img.shields.io/static/v1?label=&message=Java&color=007396&logo=Java&labelColor=2F333A)](https://www.java.com/en/)<!-- java -->
 - [![IntelliJ IDEA](https://img.shields.io/static/v1?label=&message=IntelliJ%20IDEA&color=000000&logo=IntelliJ%20IDEA&labelColor=2F333A)](https://www.jetbrains.com/idea/)<!-- intellij idea -->
 
-<!-- - `java 11` | `openjdk 11.0.12 2021-07-20` -->
-
 ### Contenido
+
+
 
 - [Clases](./clases/) | código desarrollado durante las primeras clases
 - [Frontend](./Frontend/) | HTML y CSS
@@ -45,6 +45,8 @@
 - [lab_03](./labs/lab_03/) | Arreglos y Cadenas en Java
 - [lab_04](./labs/lab_04/) | Clase Auto
 - [lab_05](./labs/lab_05/) | Sistema de Biblioteca, Sistema de Reservas de Hotel, Sistema de Venta de Entradas para Cine, Sistema de Gestión de Estudiantes y Cursos
+- [lab_06](./labs/lab06/) | Lista de pedidos para restaurante en Java
+- [lab_07](./labs/lab_07/) | To-Do List en JavaScript
 
 ## Autor
 
