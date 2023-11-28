@@ -34,7 +34,10 @@
 
 ### Contenido
 
-- [Clases](./clases/) | código desarrollado durante las clases
+- [Clases](./clases/) | código desarrollado durante las primeras clases
+- [Frontend](./Frontend/) | HTML y CSS
+- [JavaScript](./JavaScript/) | Programacion JavaScript basica para web
+- [Servlets y JSP](./ServletsJSP/) | Java Web: Servlets y JSP
 
 ## Laboratorios
 
