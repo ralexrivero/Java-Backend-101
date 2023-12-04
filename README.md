@@ -32,8 +32,6 @@
 
 ### Contenido
 
-
-
 - [Clases](./clases/) | código desarrollado durante las primeras clases
 - [Frontend](./Frontend/) | HTML y CSS
 - [JavaScript](./JavaScript/) | Programacion JavaScript basica para web
