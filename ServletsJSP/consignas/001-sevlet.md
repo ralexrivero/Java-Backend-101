@@ -83,32 +83,16 @@ Para desarrollar un servlet avanzado que maneje tanto solicitudes GET como POST 
 #### Paso 4: Configurar `pom.xml`
 
 1. **Editar `pom.xml`**:
-   - Asegúrate de que las dependencias necesarias están presentes en tu archivo `pom.xml`. Aquí hay un ejemplo de cómo debería verse:
+   - Asegúrate de que las dependencias necesarias están presentes en tu archivo `pom.xml`. Agrega este codigo en `dependencies`:
 
      ```xml
-     <?xml version="1.0" encoding="UTF-8"?>
-     <project xmlns="http://maven.apache.org/POM/4.0.0"
-              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-         <modelVersion>4.0.0</modelVersion>
+<dependency>
+    <groupId>jakarta.servlet</groupId>
+    <artifactId>jakarta.servlet-api</artifactId>
+    <version>4.0.4</version>
+    <scope>provided</scope>
+</dependency>
 
-         <groupId>com.miservletapp</groupId>
-         <artifactId>MiServletApp</artifactId>
-         <version>1.0-SNAPSHOT</version>
-         <packaging>war</packaging>
-
-         <dependencies>
-             <!-- Servlet API -->
-             <dependency>
-                 <groupId>jakarta.servlet</groupId>
-                 <artifactId>
-
-jakarta.servlet-api</artifactId>
-                 <version>4.0.4</version>
-                 <scope>provided</scope>
-             </dependency>
-         </dependencies>
-     </project>
      ```
 
 #### Paso 5: Despliegue y Prueba del Servlet
