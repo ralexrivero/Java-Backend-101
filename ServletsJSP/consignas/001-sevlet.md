@@ -85,15 +85,14 @@ Para desarrollar un servlet avanzado que maneje tanto solicitudes GET como POST 
 1. **Editar `pom.xml`**:
    - Asegúrate de que las dependencias necesarias están presentes en tu archivo `pom.xml`. Agrega este codigo en `dependencies`:
 
-     ```xml
+```xml
 <dependency>
     <groupId>jakarta.servlet</groupId>
     <artifactId>jakarta.servlet-api</artifactId>
     <version>4.0.4</version>
     <scope>provided</scope>
 </dependency>
-
-     ```
+```
 
 #### Paso 5: Despliegue y Prueba del Servlet
 
