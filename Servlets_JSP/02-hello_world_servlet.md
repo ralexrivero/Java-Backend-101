@@ -14,6 +14,9 @@ En esta lección donde aprenderemos a crear una aplicación web simple "Hola Mun
 
 5. **Configurar el JDK y el Servidor de Aplicaciones**: Asegúrate de seleccionar el JDK correcto (por ejemplo, JDK 1.8). Luego, en el apartado de `Application Server`, selecciona tu instalación de Apache Tomcat. Si no has configurado Tomcat en IntelliJ IDEA, haz clic en `New...` y navega hasta la carpeta de instalación de Tomcat.
 
+JDK: 1.8
+VERSION: Java EE 8
+
 6. **Finalizar la Configuración**: Haz clic en `Next` y luego en `Finish`. IntelliJ IDEA creará el proyecto para ti.
 
 ## Paso 2: Creación del Servlet
