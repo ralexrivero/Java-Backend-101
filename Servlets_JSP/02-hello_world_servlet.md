@@ -27,50 +27,58 @@ VERSION: Java EE 8
 
 3. **Extender HttpServlet y Sobrescribir doGet**: En tu clase `HolaMundoServlet`, escribe el siguiente código:
 
-    ```java
-    import javax.servlet.*;
-    import javax.servlet.http.*;
-    import java.io.IOException;
+```java
+package com.example.holamundoservlets;
 
-    @WebServlet("/HolaMundo")
-    public class HolaMundoServlet extends HttpServlet {
-        @Override
-        protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-            response.setContentType("text/html;charset=UTF-8");
-            try (PrintWriter out = response.getWriter()) {
-                out.println("<!DOCTYPE html>");
-                out.println("<html>");
-                out.println("<head>");
-                out.println("<title>Hola Mundo Servlet</title>");
-                out.println("</head>");
-                out.println("<body>");
-                out.println("<h1>Hola Mundo desde Servlets</h1>");
-                out.println("</body>");
-                out.println("</html>");
-            }
+import jakarta.servlet.*;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.*;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+@WebServlet("/HolaMundo")
+public class HolaMundoServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Hola Mundo Servlet</title>");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Hola Mundo desde Servlets</h1>");
+            out.println("</body>");
+            out.println("</html>");
         }
     }
-    ```
+}
+```
 
-    Este código define un servlet básico que responde a las peticiones GET con un simple "Hola Mundo" en formato HTML.
+Este código define un servlet básico que responde a las peticiones GET con un simple "Hola Mundo" en formato HTML.
 
 ## Paso 3: Configuración del `web.xml`
 
 Aunque estamos utilizando anotaciones para definir nuestro servlet, es bueno conocer el archivo `web.xml`, que se encuentra en `WEB-INF`. Por ahora, puedes dejar este archivo como está, ya que las anotaciones en nuestro servlet son suficientes para su configuración.
 
-agregar:
+## Paso 3.2: Configuracion del `pom.xml`
 
-```
-    <servlet>
-        <servlet-name>holaMundoServlet</servlet-name>
-        <servlet-class>com.tuPaquete.HolaMundoServlet</servlet-class>
-    </servlet>
+Dependencia del Servlet: Estás utilizando la dependencia de javax.servlet-api versión 4.0.1. Para Jakarta EE 9.1, deberías usar jakarta.servlet:jakarta.servlet-api.
 
-    <servlet-mapping>
-        <servlet-name>holaMundoServlet</servlet-name>
-        <url-pattern>/HolaMundo</url-pattern>
-    </servlet-mapping>
+```xml
+<dependency>
+    <groupId>jakarta.servlet</groupId>
+    <artifactId>jakarta.servlet-api</artifactId>
+    <version>5.0.0</version> <!-- Asegúrate de usar una versión compatible con Jakarta EE 9.1 -->
+    <scope>provided</scope>
+</dependency>
 ```
+
+## Paso 4: Configurar tomcat
+
+En la configuracion del servidor:
+En el campo `URL` ingresar `http://localhost:8080/HolaMundoServlets_war_exploded/HolaMundo`
 
 ## Paso 4: Ejecutar la Aplicación
 
