@@ -71,7 +71,7 @@ En la configuración de Tomcat dentro de IntelliJ:
 
 1. **Compilación del Proyecto**: Usa `Build > Build Project` para compilar tu aplicación.
 2. **Ejecución del Proyecto**: Ejecuta el proyecto seleccionando `Run 'Tomcat Server'`. Esto desplegará tu aplicación en el servidor Tomcat.
-3. **Verificación en el Navegador**: Abre un navegador y visita `http://localhost:8080/HolaMundoServlets/HolaMundo` para ver tu aplicación en acción.
+3. **Verificación en el Navegador**: Abre un navegador y visita `http://localhost:8080/HolaMundoServlets_war_exploded/HolaMundo` para ver tu aplicación en acción.
 
 ## Paso 6: Conclusión y Detención del Servidor
 
