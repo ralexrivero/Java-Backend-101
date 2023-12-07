@@ -23,28 +23,27 @@ public class HolaMundoServlet extends HttpServlet {
             out.println("</html>");
         }
     }
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String nombre = request.getParameter("nombre");
         int edad = Integer.parseInt(request.getParameter("edad"));
         String email = request.getParameter("email");
 
-        response.setContentType("text/html;charset=UTF-8");
+        response.setContentType("text/html;chatset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             out.println("<!DOCTYPE html>");
-            out.println("<html>");
+            out.println("<html lang=\"en\">");
             out.println("<head>");
-            out.println("<title>Información del Usuario</title>");
+            out.println("<title>Saludo personalizado</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Detalles del Usuario</h1>");
-            out.println("<p>Nombre: " + nombre + "</p>");
-            out.println("<p>Edad: " + edad + "</p>");
-            out.println("<p>Correo Electrónico: " + email + "</p>");
+            out.println("<h1>Información del usuario</h1>");
+            out.println("<h2>Nombre:" + nombre + "</h2>");
+            out.println("<p>Edad: " + edad + " años</p>");
+            out.println("<p>Email: " + email + "</p>");
             out.println("</body>");
             out.println("</html>");
         }
     }
-
-
 }

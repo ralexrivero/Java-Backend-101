@@ -1,4 +1,4 @@
-# Lección Mejorada: Creación de un Servlet "Hola Mundo" en IntelliJ IDEA Ultimate con Tomcat
+# Creación de un Servlet "Hola Mundo" en IntelliJ IDEA Ultimate con Tomcat
 
 Vamos a crear una aplicación web básica utilizando Servlets en IntelliJ IDEA Ultimate, apoyados por el servidor Apache Tomcat. Esta guía paso a paso te llevará a través del proceso de configuración y desarrollo. Asegúrate de tener instalado IntelliJ IDEA Ultimate y Apache Tomcat 10 antes de comenzar.
 

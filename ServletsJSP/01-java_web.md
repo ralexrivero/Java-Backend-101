@@ -1,6 +1,6 @@
 # Introducción a las Aplicaciones Web con Java Servlets y JSP
 
-Bienvenidos a esta primera lección, donde exploraremos los fundamentos de la World Wide Web (WWW) y su relevancia en el desarrollo de aplicaciones web modernas. Nuestro enfoque se centrará en cómo Java Servlets y JSP (JavaServer Pages) juegan un papel crucial en este ámbito. Prepárense para sumergirse en un viaje de aprendizaje que les abrirá las puertas al emocionante mundo del desarrollo web con Java.
+Enesta primera lección, exploraremos los fundamentos de la World Wide Web (WWW) y su relevancia en el desarrollo de aplicaciones web modernas. Nuestro enfoque se centrará en cómo Java Servlets y JSP (JavaServer Pages) juegan un papel crucial en este ámbito. Prepárense para sumergirse en un viaje de aprendizaje que les abrirá las puertas al emocionante mundo del desarrollo web con Java.
 
 ## La Evolución de la Web: De Sitios Estáticos a Aplicaciones Dinámicas
 
@@ -34,11 +34,10 @@ El flujo típico en una aplicación web sigue el modelo cliente-servidor a trav�
 
 Este proceso subraya la importancia del protocolo HTTP como medio de comunicación entre el navegador y el servidor.
 
-## Objetivos del Curso
+## Objetivos del modulo
 
 En este capitulo, nos enfocaremos en:
 
 - Crear y entender la capa web utilizando Servlets y JSP.
 - Aplicar las mejores prácticas y patrones de diseño para desarrollar aplicaciones web robustas, extensibles y escalables.
 - Explorar el ciclo completo de desarrollo, desde la recepción de la petición HTTP hasta la generación de la respuesta.
-
