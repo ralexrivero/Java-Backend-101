@@ -9,6 +9,7 @@
 ```
 
 - [wiki](https://github.com/ralexrivero/Java-Backend-101/wiki)
+- [Clases Grabadas](https://xelartiv-my.sharepoint.com/:f:/g/personal/ralex_xelartiv_onmicrosoft_com/EjVVXR_AkbxIm_U-F9oBskMBEzphvSVcUmovXQ1WYdIKpQ?e=TIlq7q)
 
 ## cohorte 08-23
 
@@ -35,7 +36,7 @@
 - [Clases](./clases/) | código desarrollado durante las primeras clases
 - [Frontend](./Frontend/) | HTML y CSS
 - [JavaScript](./JavaScript/) | Programacion JavaScript basica para web
-- [Servlets y JSP](./ServletsJSP/) | Java Web: Servlets y JSP
+- [Servlets y JSP](./Servlets_JSP/) | Java Web: Servlets y JSP
 
 ## Laboratorios
 
