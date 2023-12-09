@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: navy;
+}
+
+input[type="text"],
+input[type="number"] {
+    margin-bottom: .5rem;
+}
+
+input[type="submit"] {
+    background-color: blue;
+    color: #fff;
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue;
+}
+
