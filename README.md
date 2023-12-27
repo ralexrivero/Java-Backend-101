@@ -22,14 +22,21 @@
 - [Santiago Ayala](https://www.linkedin.com/)
 - [Wellington Silva](https://www.linkedin.com/)
 
-### Mentor
+### Docente
 
 - [Ronald Rivero](https://www.linkedin.com/in/ronald-rivero/)
 
-### entorno
+### Entorno
 
 - [![Java](https://img.shields.io/static/v1?label=&message=Java&color=007396&logo=Java&labelColor=2F333A)](https://www.java.com/en/)<!-- java -->
+- [JavaScript]
+- [HTML]
+- [CSS]
 - [![IntelliJ IDEA](https://img.shields.io/static/v1?label=&message=IntelliJ%20IDEA&color=000000&logo=IntelliJ%20IDEA&labelColor=2F333A)](https://www.jetbrains.com/idea/)<!-- intellij idea -->
+- `mysql`
+- `tomcat`
+- `cmd`
+
 
 ### Contenido
 
@@ -37,6 +44,9 @@
 - [Frontend](./Frontend/) | HTML y CSS
 - [JavaScript](./JavaScript/) | Programacion JavaScript basica para web
 - [Servlets y JSP](./Servlets_JSP/) | Java Web: Servlets y JSP
+- [JSP]
+- [jdbc]
+- [Spring]
 
 ## Laboratorios
 
