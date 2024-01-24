@@ -2,19 +2,19 @@ package com.miaplicacion.model;
 
 import com.miaplicacion.util.DataConnect;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class UsuarioDAO {
 
     public static boolean insertar(Usuario usuario) {
-        try (Connection con = DataConnect.getConnection();
-             PreparedStatement ps = con.prepareStatement("INSERT INTO usuarios (nombre, email) VALUES (?, ?)")) {
+        Connection con = null;
+        PreparedStatement ps = null;
 
+        try {
+            con = DataConnect.getConnection();
+            ps = con.prepareStatement("INSERT INTO usuarios (nombre, email) VALUES (?, ?)");
             ps.setString(1, usuario.getNombre());
             ps.setString(2, usuario.getEmail());
 
@@ -22,15 +22,31 @@ public class UsuarioDAO {
             return i > 0;
         } catch (SQLException e) {
             e.printStackTrace();
-            return false;
+        } finally {
+            try {
+                if (ps != null) {
+                    ps.close();
+                }
+                if (con != null) {
+                    con.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
+        return false;
     }
 
     public static List<Usuario> obtenerTodos() {
         List<Usuario> usuarios = new ArrayList<>();
-        try (Connection con = DataConnect.getConnection();
-             PreparedStatement ps = con.prepareStatement("SELECT * FROM usuarios");
-             ResultSet rs = ps.executeQuery()) {
+        Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+
+        try {
+            con = DataConnect.getConnection();
+            ps = con.prepareStatement("SELECT * FROM usuarios");
+            rs = ps.executeQuery();
 
             while (rs.next()) {
                 Usuario usuario = new Usuario(rs.getInt("id"), rs.getString("nombre"), rs.getString("email"));
@@ -38,6 +54,20 @@ public class UsuarioDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                if (rs != null) {
+                    rs.close();
+                }
+                if (ps != null) {
+                    ps.close();
+                }
+                if (con != null) {
+                    con.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
         return usuarios;
     }
