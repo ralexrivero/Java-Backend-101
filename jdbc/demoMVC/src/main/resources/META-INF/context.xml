@@ -1,0 +1,12 @@
+<Context>
+    <!-- Definicion de DataSource -->
+    <Resource name="jdbc/MyLocalDB"
+              auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/EjemploJava"
+              username="root"
+              password="abcd1234"
+              maxActive="10"
+              maxIdle="4"/>
+</Context>
