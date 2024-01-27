@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tareas | Listado</title>
+    <!-- css o bootstrap y javascript al final del body -->
+</head>
+<body>
+    <h1>Listado de tareas</h1>
+    <ul>
+        <li th:each="tarea: ${tareas}">
+            <span th:text="${tarea.descripcion}">Descripcon de la tarea</span>
+            - <span th:text="${#dates.format(tarea.fecha, 'dd/MM/yyyy')}">Fecha</span>
+        </li>
+    </ul>
+</body>
+</html>
