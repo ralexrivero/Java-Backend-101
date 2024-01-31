@@ -5,8 +5,8 @@ import java.time.LocalDate;
 
 // transformamos Tarea en una entidad JPA
 
-@Entity
-@Table(name = "tareas")
+@Entity // entidad JPA
+@Table(name = "tareas") // cual es la tabla relacionada en la base de datos
 public class Tarea {
     @Id // Indica el campo que actua como clave primaria
     @GeneratedValue(strategy = GenerationType.IDENTITY)
