@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear tarea</title>
+</head>
+<body>
+    <h1>Crear tarea</h1>
+    <form th:action="@{/tareas}" th:object="${tarea}" method="post">
+        <p>Descripcion: <input type="text" th:field="*{descripcion}" /> </p>
+        <p>Fecha: <input type="date" th:field="*{fecha}" /></p>
+        <p><input type="submit" value="Crear" /></p>
+    </form>
+</body>
+</html>
