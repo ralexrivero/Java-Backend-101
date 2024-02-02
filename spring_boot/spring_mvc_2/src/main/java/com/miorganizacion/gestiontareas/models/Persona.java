@@ -1,11 +1,9 @@
 package com.miorganizacion.gestiontareas.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity // marca la clase como una entidad JPA
+@Table(name="personas")
 public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // generar un id de forma automatica
