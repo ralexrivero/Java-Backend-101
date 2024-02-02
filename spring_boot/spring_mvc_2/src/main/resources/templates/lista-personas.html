@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="common-head :: common-head('Gestion de Tareas | Listado de Personas')"></head>
-<body>
-    <header th:replace="header.html"></header>
+<head th:replace="common-head :: common-head('Gestión de Tareas | Listado de Personas')"></head>
+<body class="d-flex flex-column min-vh-100">
+<header th:replace="header :: header"></header>
 
+<main class="flex-grow-1">
     <div class="container mt-4">
         <h1>Listado de Personas</h1>
         <ul class="list-group mt-3">
@@ -17,10 +18,10 @@
             <a href="/" class="btn btn-secondary">Inicio</a>
         </div>
     </div>
+</main>
 
-    <footer th:replace="footer.html"></footer>
+<footer th:replace="footer :: footer" class="mt-auto"></footer>
 
-    <!-- Incluir fragmento de scripts comunes -->
-    <div th:replace="scripts :: common-scripts"></div>
+<div th:replace="scripts :: common-scripts"></div>
 </body>
 </html>
