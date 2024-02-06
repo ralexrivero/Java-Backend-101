@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common-head :: common-head('Gestión de Tareas | Página de Error')"></head>
+<body class="d-flex flex-column min-vh-100">
+<header th:replace="header :: header"></header>
+
+<main class="container mt-5 flex-grow-1">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h1 class="display-4 font-weight-bold">Oops!</h1>
+            <p class="lead">Algo salió mal. No pudimos encontrar lo que buscabas.</p>
+            <div class="error-details">
+                Lo sentimos, ha ocurrido un error interno. Por favor, intenta de nuevo más tarde.
+            </div>
+            <div class="error-actions mt-4">
+                <a href="/" class="btn btn-primary btn-lg">Volver al Inicio</a>
+                <a href="/contacto" class="btn btn-secondary btn-lg">Contacto</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer th:replace="footer :: footer" class="mt-auto"></footer>
+
+<div th:replace="scripts :: common-scripts"></div>
+</body>
+</html>

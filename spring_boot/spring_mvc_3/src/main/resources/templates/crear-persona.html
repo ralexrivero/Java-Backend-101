@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common-head :: common-head('Crear Persona')"></head>
+<body class="d-flex flex-column min-vh-100">
+<header th:replace="header.html"></header>
+
+<main class="flex-grow-1 container mt-4">
+    <h1>Crear Persona</h1>
+    <form th:action="@{/personas}" th:object="${persona}" method="post" class="mt-3">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" th:field="*{nombre}" required>
+        </div>
+        <div class="form-group mb-3">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" class="form-control" id="apellidos" th:field="*{apellidos}" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+</main>
+
+<footer th:replace="footer.html" class="mt-auto"></footer>
+
+<div th:replace="scripts :: common-scripts"></div>
+</body>
+</html>
