@@ -5,10 +5,7 @@ import com.miorganizacion.gestiontareas.repositories.TareaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -37,4 +34,22 @@ public class TareaController {
         tareaRepository.save(tarea);
         return "redirect:/tareas";
     }
+
+    // Metodo para mostrar el formulario de edicion de tarea
+    @GetMapping("/editar/{id}")
+    public String mostrarFormularioDeEdicion(@PathVariable Long id, Model model) {
+        Tarea tarea = tareaRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Tarea no valida: " + id));
+        model.addAttribute("tarea", tarea);
+        return "editar-tarea";
+    }
+
+    // Metodo para procesar el formulario de edicion de tarea
+    @PostMapping("editar/{id}") // el {id} es un placeholder
+    public String actualizarTarea(@PathVariable Long id, @ModelAttribute Tarea tarea, Model model) {
+        // Actualizo la tarea
+        tarea.setId(id);
+        tareaRepository.save(tarea);
+        return "redirect:/tareas";
+    }
+
 }

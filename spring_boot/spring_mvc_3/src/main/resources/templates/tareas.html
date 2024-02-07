@@ -11,6 +11,7 @@
             <a href="#" class="list-group-item list-group-item-action" th:each="tarea : ${tareas}">
                 <div><strong>Descripción:</strong> <span th:text="${tarea.descripcion}">Descripción de la tarea</span></div>
                 <div><strong>Fecha:</strong> <span th:text="${#temporals.format(tarea.fecha, 'dd/MM/yyyy')}">Fecha</span></div>
+                <a th:href="@{/tareas/editar/{id}(id=${tarea.id})}" class="btn btn-primary btn-sm">Editar</a>
             </a>
         </div>
         <div class="mt-3">
