@@ -52,4 +52,9 @@ public class TareaController {
         return "redirect:/tareas";
     }
 
+    @GetMapping("/eliminar/{id}")
+    public String eliminarTarea(@PathVariable("id") Long id) {
+        tareaRepository.deleteById(id);
+        return "redirect:/tareas;";
+    }
 }

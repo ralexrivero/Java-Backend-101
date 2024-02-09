@@ -5,9 +5,7 @@ import com.miorganizacion.gestiontareas.repositories.PersonaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/personas")
@@ -27,6 +25,22 @@ public class PersonaController {
     }
     @PostMapping
     public String crearPersona(Persona persona) {
+        personaRepository.save(persona);
+        return "redirect:/personas";
+    }
+
+    // metodo para mostrar el formulario
+    @GetMapping("/editar/{id}")
+    public String mostrarFormularioDeEdicion(@PathVariable Long id, Model model) {
+        Persona persona = personaRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Id de persona no valido: " + id));
+        model.addAttribute("persona", persona);
+        return "editar-persona";
+    }
+
+    // Metodo para procesar el formulario
+    @PostMapping("/editar/{id}")
+    public String actualizarPersona(@PathVariable Long id, @ModelAttribute Persona persona, Model model) {
+        persona.setId(id);
         personaRepository.save(persona);
         return "redirect:/personas";
     }
