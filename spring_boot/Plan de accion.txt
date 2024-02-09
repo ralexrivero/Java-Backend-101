@@ -1,0 +1,23 @@
+Plan de accion:
+
+1) Modificar el modelo de datos
+	Agregar una relacion entre Tarea y Persona
+	Agregar un campo de estado a la entidad Tarea para gestionar si esta completo o pendiente
+2) Actualizar la base de datos
+	Modificar la estructura de la base de datos para reflejar los cambios en el modelo de datos
+	Modificar el sql
+3) Actualizacion del repositorio y del servicio
+	Ajustar el repositorio de Tarea para manejar la relacion con Persona
+	Modfiicar los servicios para incluir la logica de asignar una persona a una tarea y la gestion del estado
+4) Modificar los controladores
+	Agregar metodos en los controladores para gestionar el punto anterior
+5) Actualizar las vistas
+	Agregar y modificar vistas de Thymeleaf para permitir a los usuarios asignar personas a tareas y cambiar los estados
+6) Hacer pruebas
+
+
+
+Otras mejoras
+
+- Confirmacion de eliminacion
+	Mostrar un mensaje para confirmar la eliminacion de una persona o tarea

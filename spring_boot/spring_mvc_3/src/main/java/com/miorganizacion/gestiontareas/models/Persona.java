@@ -2,6 +2,8 @@ package com.miorganizacion.gestiontareas.models;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity // marca la clase como una entidad JPA
 @Table(name="personas")
 public class Persona {
@@ -10,6 +12,11 @@ public class Persona {
     private Long id;
     private String nombre;
     private String apellidos;
+
+    // Acceso bidirecciona para navegar desde la entidad Persona a sus Tareas y viceversa
+    @OneToMany(mappedBy = "personaAsignada", fetch = FetchType.LAZY) // Lazy solo es bajo demanda
+    // @OneToMany representa una relacion de una muchos. Una persona puede tener muchas tareas.
+    private List<Tarea> tareasAsignadas;
 
     public Persona() {
 

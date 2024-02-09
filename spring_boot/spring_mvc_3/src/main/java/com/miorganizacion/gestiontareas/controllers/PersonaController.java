@@ -44,4 +44,11 @@ public class PersonaController {
         personaRepository.save(persona);
         return "redirect:/personas";
     }
+
+    // Eliminar persona
+    @GetMapping("/eliminar/{id}")
+    public String eliminarPersona(@PathVariable("id") Long id) {
+        personaRepository.deleteById(id);
+        return "redirect:/personas";
+    }
 }

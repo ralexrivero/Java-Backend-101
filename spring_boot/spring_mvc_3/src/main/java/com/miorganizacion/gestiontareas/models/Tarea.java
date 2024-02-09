@@ -14,6 +14,15 @@ public class Tarea {
     private String descripcion;
     private LocalDate fecha;
 
+    // Relacion con Persona
+    @ManyToOne // relacion muchos a uno entre Tarea y Persona. Muchas instancias de Tarea pueden asociarse a una unica instancia de Persona
+    @JoinColumn(name = "persona_id") // La columna que se usa para la clave foranea es persona_id
+    private  Persona asignadoA;
+
+    // Campo para el estado de la tarea
+    @Enumerated(EnumType.STRING)  // Guarda el enum como texto en la base de datos
+    private EstadoTarea estado;
+
     // constructores
     // constructor por defecto que no tiene argumentos, en especial para spring y para la persistencia de datos
     public Tarea() {
@@ -47,5 +56,21 @@ public class Tarea {
 
     public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
+    }
+
+    public Persona getAsignadoA() {
+        return asignadoA;
+    }
+
+    public void setAsignadoA(Persona asignadoA) {
+        this.asignadoA = asignadoA;
+    }
+
+    public EstadoTarea getEstado() {
+        return estado;
+    }
+
+    public void setEstado(EstadoTarea estado) {
+        this.estado = estado;
     }
 }
